@@ -68,5 +68,15 @@ qsub run_ANTs.pbs
 - As with suite2p `qstat` to check the state of a running (or queued) job, output and errors will be written to the HPC home directory
 
 
-# Help disaster!?
-- Contact Josh, even after I've left I will be happy to help with small quick fixes / questions
+# Check suite2p ran correctly
+- log onto hpc
+- Change directory into code folder 
+```
+cd basic-uq-hpc-scripts
+```
+- Run the `write_fish_stats.py` file
+```
+python write_fish_stats.py <suite2p_output_path>
+```
+- Where `<suite2p_output_path>` is the folder of suite2p output for a single fish
+- This file will create a text file in that suite2p output folder details the stats for each of the planes
