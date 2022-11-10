@@ -30,6 +30,10 @@ ssh <uqusername>@flashlight.rcc.uq.edu.au
 
 # Run Suite2p
 - Log into the HPC
+- Change directory into code folder 
+```
+cd basic-uq-hpc-scripts
+```
 - Access to all RDP drives on the HPC is through the `/QRISdata/` directory. e.g. Q4414 (the pipeline drive) is located at `/QRISdata/Q4414/`.
 - Find the fish that you wish to run Suite2p on in your RDM drive, you can use the ls command to list files in a directory e.g.
 ```
@@ -51,6 +55,10 @@ qsub suite2p_hpc.pbs
 
 # Run ANTs
 - log onto hpc
+- Change directory into code folder 
+```
+cd basic-uq-hpc-scripts
+```
 - Edit variables to set at top of `run_ANTs.pbs` script
 - Note: filenames must have a step size in the filenames or ANTs will fail.
 - Launch job
