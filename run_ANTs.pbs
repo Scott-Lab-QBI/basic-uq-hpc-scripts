@@ -1,0 +1,29 @@
+#!/bin/bash
+#PBS -N fish01_ANTs         # Change job name if you want
+#PBS -A UQ-EAIT-ITEE        # Change to your own school
+#PBS -l select=1:ncpus=6:mem=110GB:vmem=110GB    # if you change number of CPUs also change ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS below
+#PBS -l walltime=06:00:00
+
+# VARIABLES TO SET
+S2P_OUTPUT_PATH="/QRISdata/Q4414/pipeline_output/suite2p_221110_fish01_step5"   # MUST have step value in filename
+ANTS_OUTPUT_PATH="/QRISdata/Q4414/pipeline_output/ants_221110_fish01_step5"
+ANTS_TEMPLATE_PREFIX='MW_To_Zbrain'
+
+
+module load anaconda
+source activate suite2p
+
+export ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS=6
+python ~/hpc_pipeline/warp_fish.py $S2P_OUTPUT_PATH $ANTS_OUTPUT_PATH $ANTS_TEMPLATE_PREFIX
+
+
+
+
+
+
+
+
+
+
+
+
