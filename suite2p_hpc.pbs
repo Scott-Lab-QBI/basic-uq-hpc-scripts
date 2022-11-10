@@ -1,10 +1,17 @@
 #!/bin/bash
-#PBS -N suite2p_job_name            # Name for the hpc job, maybe use fish number
-#PBS -A UQ-EAIT-ITEE                # Use your appropriate school
-#PBS -l select=1:ncpus=4:mem=110GB:vmem=110GB   # How many CPUs to use and how much memory
-#PBS -l walltime=24:00:00           # How long you expect your job to take (will get stopped after this time)
+# Name for the hpc job, maybe use fish number
+#PBS -N suite2p_job_name
+# Use your appropriate school, likely one of: UQ-QBI, UQ-SCI-SBMS or UQ-EAIT-ITEE
+#PBS -A UQ-EAIT-ITEE             
+# How many CPUs to use and how much memory   
+#PBS -l select=1:ncpus=4:mem=110GB:vmem=110GB  
+# How long you expect your job to take (will get stopped after this time)
+#PBS -l walltime=48:00:00    
+#PBS -j oe
+#PBS -k doe       
 
 # Run suite2p
 module load anaconda
 source activate suite2p
+cd basic-uq-hpc-scripts
 python run_suite2p.py

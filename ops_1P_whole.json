@@ -1,7 +1,7 @@
 {
     
-    "fish_input_path": "/QRISdata/Q4414/SPIM_raw/221110_fish01_step05/",
-    "fish_output_path": "/QRISdata/Q4414/pipeline_output/221110_fish01_step05/",
+    "fish_input_path": "/QRISdata/Q2396/SPIM_120170/Spontaneous/AG_PipelineAuditory_20200910_scn1lab_fish01_spon_2Hz_range245_step5_exposure10_power60_range245_step5_exposure10_power60/",
+    "fish_output_path": "/QRISdata/Q4414/basic_analysis/221110_fish01_step5/",
     "nplanes": 50,
     "tau": 1.4,
     "fps":100,
