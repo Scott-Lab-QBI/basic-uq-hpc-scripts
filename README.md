@@ -79,3 +79,12 @@ python write_fish_stats.py <suite2p_output_path>
 ```
 - Where `<suite2p_output_path>` is the folder of suite2p output for a single fish
 - This file will create a text file in that suite2p output folder details the stats for each of the planes
+
+# Kill a job
+- log onto hpc
+- Find the job number with command "qstat"
+- Kill the job with command "qsub"
+
+```
+qsub JOBNUMBER
+```
