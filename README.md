@@ -20,11 +20,11 @@ git clone https://github.com/Scott-Lab-QBI/basic-uq-hpc-scripts.git
 - Open Acaconda (or Powershell) prompt
 - Type (or copy and paste) the following into anaconda prompt
 ```
-ssh <uqusername>@flashlight.rcc.uq.edu.au
+ssh <uqusername>@tinaroo.rcc.uq.edu.au
 ```
 - Replace `<uqusername>` with your uq username (e.g. uqjsmith or s4323534)
-- If Bunya has been installed, replace the link to `flashlight.rcc.uq.edu.au` with the new link to bunya.
-- Alternatively, you can use VSCode, wsl, Putty or any other ssh client instead of anaconda prompt but I will not supply instructions for those here
+- If Bunya has been installed, replace the link to `tinaroo.rcc.uq.edu.au` with the new link to bunya.
+- Alternatively, you can use VSCode, wsl, Putty or any other ssh client instead of anaconda prompt but I will not supply instructions for those here.
 
 
 # Run Suite2p
