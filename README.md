@@ -83,8 +83,8 @@ python write_fish_stats.py <suite2p_output_path>
 # Kill a job
 - log onto hpc
 - Find the job number with command "qstat"
-- Kill the job with command "qsub"
+- Kill the job with command "qdel"
 
 ```
-qsub JOBNUMBER
+qdel JOBNUMBER
 ```
