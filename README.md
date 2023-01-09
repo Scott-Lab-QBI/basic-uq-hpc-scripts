@@ -14,11 +14,10 @@ git clone https://github.com/Scott-Lab-QBI/basic-uq-hpc-scripts.git
 ```
 
 ## A few one of things to change
-- Update line 3 of suite2p_hpc.pbs with your school name (it is likely one of: `UQ-QBI`, `UQ-SCI-SBMS` or `UQ-EAIT-ITEE`), use the `groups` command to see which group you belong to. 
-- 
+- Update line 5 of suite2p_hpc.pbs with your school name (it is likely one of: `UQ-QBI`, `UQ-SCI-SBMS` or `UQ-EAIT-ITEE`), use the `groups` command to see which group you belong to. 
 
 # Connecting to the HPC
-- Open Acaconda prompt
+- Open Acaconda (or Powershell) prompt
 - Type (or copy and paste) the following into anaconda prompt
 ```
 ssh <uqusername>@flashlight.rcc.uq.edu.au
