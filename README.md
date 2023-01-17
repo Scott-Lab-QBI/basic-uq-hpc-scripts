@@ -51,6 +51,19 @@ qsub suite2p_hpc.pbs
 - To check the status of jobs you can use `qstat`
 - The HPC will log any errors in files in the HPC home directory, you can review these when things don't work.
 
+# Check Suite2p ran properly
+- Log into the HPC
+- go into the `basic-uq-hpc-scripts` folder
+- run command:
+```
+python write_fish_stats.py <suite2p_output_path>
+```
+Where <suite2p_output_path> is the output path for suite2p. It should look something like this: python write_fish_stats.py /QRISdata/Q4414/SPIM/suite2p_220217_JA_fish04_step5/
+- Show new text file in the suite2p output folder (the folder with plane0, plane1, ... ) with:
+```
+cat <suite2p_path>/s2p_stats.txt
+```
+Suite2p didn't work if the "missing files" column in that file has values greater than 0.
 
 # Run ANTs
 - log onto hpc
