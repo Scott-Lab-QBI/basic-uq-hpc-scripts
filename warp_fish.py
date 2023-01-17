@@ -42,7 +42,7 @@ def main():
     # Following process in 'register_brains_to_template.ipynb'
     #fixed_image = '/QRISdata/Q2396/ForANTs/MW_Synchotrontemplate.nrrd' # the template
     #fixed_image = '/QRISdata/Q4414/MW_Synchotrontemplate.nrrd'
-    fixed_image = f'/QRISdata/Q4414/{template_prefix}template0.nrrd'
+    fixed_image = f'/QRISdata/Q5610/codes/{template_prefix}template0.nrrd'
     moved_image = meanImg_stack_nrrd_path
     registration_output_name = os.path.join(ants_output_path, f'antReg_{fish_num}')
     to_template_affine_matrix = f'{registration_output_name}0GenericAffine.mat'
@@ -83,7 +83,7 @@ def main():
     ## Warp ROIs to zbrains space
     #to_zbrains_affine_matrix = '/QRISdata/Q2396/ForANTs/Mask_nosedown/MW_To_Zbrain0GenericAffine.mat'
     #to_zbrains_affine_matrix = '/QRISdata/Q4414/MW_To_Zbrain0GenericAffine.mat'
-    to_zbrains_affine_matrix = f'/QRISdata/Q4414/{template_prefix}0GenericAffine.mat'
+    to_zbrains_affine_matrix = f'/QRISdata/Q5610/codes/{template_prefix}0GenericAffine.mat'
     warp_image = to_zbrains_affine_matrix.replace('0GenericAffine.mat','1InverseWarp.nii.gz')
     input_coords = templatespace_rois_output_name
     zbrainspace_rois_output_name = os.path.join(ants_output_path, f'ROIs_zbrainspace_{fish_num}.csv')
