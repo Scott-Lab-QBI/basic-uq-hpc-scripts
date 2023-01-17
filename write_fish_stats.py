@@ -86,7 +86,7 @@ def main():
     output.append(f'Full fish stats:')
     output.append(f'Total ROIs: {total_rois}')
 
-    if all_planes_okay:
+    if True:
         output_file = os.path.join(fish_s2p_path, 's2p_stats.txt')
         with open(output_file, 'w') as fp:
             fp.write('\n'.join(output) + '\n')
