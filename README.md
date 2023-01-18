@@ -51,7 +51,7 @@ qsub suite2p_hpc.pbs
 - To check the status of jobs you can use `qstat`
 - The HPC will log any errors in files in the HPC home directory, you can review these when things don't work.
 
-# Check Suite2p ran properly
+# Check Suite2p ran correctly
 - Log into the HPC
 - go into the `basic-uq-hpc-scripts` folder
 - run command:
@@ -80,18 +80,14 @@ qsub run_ANTs.pbs
 - As with suite2p `qstat` to check the state of a running (or queued) job, output and errors will be written to the HPC home directory
 
 
-# Check suite2p ran correctly
+# Check ANTs ran correctly
 - log onto hpc
 - Change directory into code folder 
 ```
 cd basic-uq-hpc-scripts
 ```
-- Run the `write_fish_stats.py` file
-```
-python write_fish_stats.py <suite2p_output_path>
-```
-- Where `<suite2p_output_path>` is the folder of suite2p output for a single fish
-- This file will create a text file in that suite2p output folder details the stats for each of the planes
+- Check the *.e* files using command 'ls'
+- Open the error file from a fish that did not run through ANTs correctly using command 'vim'.
 
 # Kill a job
 - log onto hpc
